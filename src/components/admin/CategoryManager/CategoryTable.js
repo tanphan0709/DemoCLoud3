@@ -9,7 +9,7 @@ function CategoryTable() {
   
 
   useEffect(() => {
-    fetch("https://learning-cloud-project-408108.el.r.appspot.com/categories/all")
+    fetch("https://lofty-fort-444902-p0.uc.r.appspot.com/categories/all")
       .then((response) => response.json())
       .then((data) => {
         setCategories(data);
@@ -21,7 +21,7 @@ function CategoryTable() {
   }, []);
 
   const handleDeleteCategory = (cID) => {
-    fetch(`https://learning-cloud-project-408108.el.r.appspot.com/categories/delete/${cID}`, {
+    fetch(`https://lofty-fort-444902-p0.uc.r.appspot.com/categories/delete/${cID}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -40,7 +40,7 @@ function CategoryTable() {
     };
 
     const cid = categories[index].cid;
-    fetch(`https://learning-cloud-project-408108.el.r.appspot.com/categories/update/${cid}`, {
+    fetch(`https://lofty-fort-444902-p0.uc.r.appspot.com/categories/update/${cid}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
