@@ -17,7 +17,7 @@ function Personal() {
       },
       body: JSON.stringify({ name, gmail, phone, address }),
     };
-    fetch(`https://learning-cloud-project-408108.el.r.appspot.com/accounts/update/${user.uid}`, requestOptions)
+    fetch(`https://lofty-fort-444902-p0.uc.r.appspot.com/accounts/update/${user.uid}`, requestOptions)
       .then((response) => {
         if (response.ok) {
           alert("Cập nhật tài khoản thành công!");
