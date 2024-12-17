@@ -7,7 +7,7 @@ function Category({ onCategoryClick }) {
 
   useEffect(() => {
     // Call API to fetch the list of categories and update state
-    fetch("https://learning-cloud-project-408108.el.r.appspot.com/categories/all")
+    fetch("https://lofty-fort-444902-p0.uc.r.appspot.com/categories/all")
       .then((response) => response.json())
       .then((data) => {
         setCategories(data);
