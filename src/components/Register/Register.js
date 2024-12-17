@@ -46,7 +46,7 @@ function Register() {
       return;
     }
 
-    fetch("https://learning-cloud-project-408108.el.r.appspot.com/accounts/register", {
+    fetch("https://lofty-fort-444902-p0.uc.r.appspot.com/accounts/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
