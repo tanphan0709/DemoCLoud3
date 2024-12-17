@@ -4,7 +4,7 @@ function AllProduct({ searchKeyword, categoryId }) {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   useEffect(() => {
-    fetch("https://learning-cloud-project-408108.el.r.appspot.com/products")
+    fetch("https://lofty-fort-444902-p0.uc.r.appspot.com/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
