@@ -9,7 +9,7 @@ function CartItem() {
     const queryParams = new URLSearchParams(location.search);
     const pID = queryParams.get("id");
     if (pID) {
-      fetch(`https://learning-cloud-project-408108.el.r.appspot.com/products/${pID}`)
+      fetch(`https://lofty-fort-444902-p0.uc.r.appspot.com/products/${pID}`)
         .then((response) => response.json())
         .then((data) => setProduct(data));
     }
