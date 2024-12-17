@@ -6,7 +6,7 @@ function Menu(props) {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     // Fetch categories from API endpoint
-    fetch("https://learning-cloud-project-408108.el.r.appspot.com/categories/all")
+    fetch("https://lofty-fort-444902-p0.uc.r.appspot.com/categories/all")
       .then((response) => response.json())
       .then((data) => {
         setCategories(data);
