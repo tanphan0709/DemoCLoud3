@@ -15,7 +15,7 @@ function ProductRow({ product, categories, onDeleteProduct, products }) {
     console.log(pid);
     // console.log(data)
     // data.append("imgUrl", image); // Thêm Image URL vào FormData
-    fetch(`https://learning-cloud-project-408108.el.r.appspot.com/products/update/${pid}/${data.get("cID")}`, {
+    fetch(`https://lofty-fort-444902-p0.uc.r.appspot.com/products/update/${pid}/${data.get("cID")}`, {
       method: "PUT",
       body: JSON.stringify(Object.fromEntries(data)),
       headers: {
