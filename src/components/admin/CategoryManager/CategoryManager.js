@@ -12,7 +12,7 @@ function CategoryManager() {
   };
 
   useEffect(() => {
-    fetch("https://learning-cloud-project-408108.el.r.appspot.com/categories/all")
+    fetch("https://lofty-fort-444902-p0.uc.r.appspot.com/categories/all")
       .then((response) => response.json())
       .then((data) => {
         setCategories(data);
@@ -27,7 +27,7 @@ function CategoryManager() {
     const form = event.target;
     const data = new FormData(form);
     data.append("imgUrl", image); // Thêm Image URL vào FormData
-    fetch("https://learning-cloud-project-408108.el.r.appspot.com/categories/add", {
+    fetch("https://lofty-fort-444902-p0.uc.r.appspot.com/categories/add", {
       method: "POST",
       body: JSON.stringify(Object.fromEntries(data)),
       headers: {
